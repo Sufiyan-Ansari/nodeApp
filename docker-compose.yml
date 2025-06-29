@@ -1,0 +1,31 @@
+version: '3'
+services:
+  app:
+    image: sufiyanansari100/nodeapp:0.0.6
+    container_name: cluster-container
+    restart: always
+    command: sh -c "node index.js"
+    ports:
+      - 3000:3000
+    working_dir: /home/node/
+    networks:
+      - appnet
+
+  redis:
+    image: redis:latest
+    container_name: Redis-container
+    ports:
+      - "6379:6379"
+    networks:
+      - appnet
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+  
+   
+
+networks:
+  appnet:  
+
