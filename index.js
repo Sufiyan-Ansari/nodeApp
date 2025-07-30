@@ -4,7 +4,6 @@ const redis = require('redis');
 const app = express();
 const PORT = 3000;
 
-// Redis client setup
 const client = redis.createClient({
     url: 'redis://redis:6379'
 });
