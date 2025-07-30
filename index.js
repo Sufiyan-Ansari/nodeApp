@@ -9,7 +9,6 @@ const client = redis.createClient({
 });
 client.connect().catch(console.error);
 
-// Middleware
 app.use(express.urlencoded({ extended: true })); // This replaces body-parser
 app.set('view engine', 'ejs');
 
