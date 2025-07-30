@@ -12,12 +12,12 @@ client.connect().catch(console.error);
 app.use(express.urlencoded({ extended: true })); // This replaces body-parser
 app.set('view engine', 'ejs');
 
-// Routes
+
 app.get('/', (req, res) => {
     res.render('index');
 });
 
-
+///comments
 app.post('/save', async (req, res) => {
     const username = req.body.username;
 
