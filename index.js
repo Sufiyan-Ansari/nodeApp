@@ -17,7 +17,6 @@ app.get('/', (req, res) => {
     res.render('index');
 });
 
-///comments ++
 app.post('/save', async (req, res) => {
     const username = req.body.username;
 
