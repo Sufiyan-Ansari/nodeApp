@@ -13,8 +13,8 @@ on:
   workflow_dispatch:
    inputs:
      name:
-       description: 'Person'
-       default: 'World'
+       description: 'Branch'
+       default: 'Release/5.7.3'
        required: true
 
 env:
