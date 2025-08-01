@@ -16,6 +16,10 @@ on:
        description: 'Branch'
        default: 'Release/5.7.3'
        required: true
+     name:
+       description: 'Deployment Path'
+       default: 'C:/Program file x86'
+       required: true
 
 env:
   username: sufiyan
