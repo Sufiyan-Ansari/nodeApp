@@ -38,7 +38,7 @@ jobs:
         uses: Amadevus/pwsh-script@v2.0.3
         with:
           script:
-             Write-Host "Hello Sufiyan"
+             Write-Host "Hello Sufiyan $USERNAME"
              mkdir Test
           
       
