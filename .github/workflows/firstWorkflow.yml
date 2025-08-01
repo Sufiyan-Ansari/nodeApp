@@ -60,7 +60,7 @@ jobs:
         uses: Amadevus/pwsh-script@v2.0.3
         with:
           script:
-             Write-Host "Hello Sufiyan  $env:username ||  || $env:userID || ${{ inputs.name }} ${{ inputs.DeploymentPath }}    "
+             Write-Host " $env:input.name || ${{ inputs.name }} ${{ inputs.DeploymentPath }}    "
              
           
       
