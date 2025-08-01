@@ -42,7 +42,7 @@ jobs:
         uses: Amadevus/pwsh-script@v2.0.3
         with:
           script:
-             Write-Host "Hello Sufiyan ${{ vars.USERNAME }} "
-             mkdir Test
+             Write-Host "Hello Sufiyan ${{ vars.username }} || ${{ vars.userID }} "
+             
           
       
