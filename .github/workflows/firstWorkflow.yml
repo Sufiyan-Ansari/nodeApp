@@ -39,5 +39,6 @@ jobs:
         with:
           script:
              Write-Host "Hello Sufiyan"
+             mkdir Test
           
       
