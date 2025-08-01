@@ -16,9 +16,13 @@ on:
        description: 'Branch'
        default: 'Release/5.7.3'
        required: true
-     name:
+     DeploymentPath:
        description: 'Deployment Path'
        default: 'C:/Program file x86'
+       required: true
+     WebsiteName:
+       description: 'IRIS573'
+       default: ''
        required: true
 
 env:
