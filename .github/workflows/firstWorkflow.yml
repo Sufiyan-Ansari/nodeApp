@@ -62,7 +62,7 @@ jobs:
           script:
              Write-Host " ${{ inputs.name }} ${{ inputs.DeploymentPath }}  ${{ github.event.inputs.WebsiteName }}  "
       - name: sufiyan
-        run: echo "Hello ${{github.event.inputs.name}}"
+        run: echo "Hello ${{ github.event.inputs.name }}"
              
           
       
