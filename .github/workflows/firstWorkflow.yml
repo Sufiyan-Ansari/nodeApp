@@ -49,7 +49,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        run: echo Sufiyan ${{ github.event.inputs.name }}
+        run: echo Sufiyan ${{ inputs.name }}
 
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
@@ -60,7 +60,7 @@ jobs:
         uses: Amadevus/pwsh-script@v2.0.3
         with:
           script:
-             Write-Host "Hello Sufiyan  $env:username ||  || $env:userID || ${{ github.event.inputs.name }} ${{ inputs.DeploymentPath }}    "
+             Write-Host "Hello Sufiyan  $env:username ||  || $env:userID || ${{ inputs.name }} ${{ inputs.DeploymentPath }}    "
              
           
       
