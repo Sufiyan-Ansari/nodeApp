@@ -49,7 +49,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Enter in workspace directory
-        run: zip -r Package.zip ${{ github.workspace }}/nodeApp
+        run: zip -r Package.zip ${{ github.workspace }}
 
 
              
