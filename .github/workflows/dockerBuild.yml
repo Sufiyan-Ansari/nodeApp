@@ -58,7 +58,7 @@ jobs:
           api_key: ${{ secrets.OCTOPUS_API_KEY }}
           server: ${{ secrets.OCTOPUS_SERVER_URL }}
           space: "Default"
-          packages: "${{ github.workspace }}/Package.zip"
+          packages: "${{ github.workspace }}/Package.0.0.1.zip"
 
 
              
