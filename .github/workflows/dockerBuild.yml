@@ -48,8 +48,9 @@ jobs:
       - uses: actions/checkout@v4
 
       # Runs a single command using the runners shell
-      - name: Enter in workspace directory
-        run: zip -r Package.zip ${{ github.workspace }}
+      - name: Packaging content
+        run: tar -czvf file.tar.gz ${{ github.workspace }}
+        
 
       - name: Push package to Octopus
         uses: OctopusDeploy/push-package-action@v3
