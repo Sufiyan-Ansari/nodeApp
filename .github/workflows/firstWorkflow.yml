@@ -49,20 +49,9 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        run: echo Sufiyan ${{ inputs.name }}
+        run: docker build -t nodeapp:TestTag .
 
-      # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
-        run: |
-          echo ${{ inputs.name }} ${{ inputs.DeploymentPath }}  ${{ github.event.inputs.WebsiteName }}
-          echo test, and deploy your project.
-      - name: PowerShell script
-        uses: Amadevus/pwsh-script@v2.0.3
-        with:
-          script:
-             Write-Host " ${{ inputs.name }} ${{ inputs.DeploymentPath }}  ${{ github.event.inputs.WebsiteName }}  "
-      - name: sufiyan
-        run: echo "Hello ${{ github.event.inputs.name }}"
+
              
           
       
