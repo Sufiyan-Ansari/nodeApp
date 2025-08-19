@@ -51,6 +51,12 @@ jobs:
       - name: Enter in workspace directory
         run: zip -r Package.zip ${{ github.workspace }}
 
+      - name: Push package to Octopus
+        uses: OctopusDeploy/push-package-action@v3
+        with:
+          api_key: ${{ secrets.OCTOPUS_API_KEY }}
+          server: ${{ secrets.OCTOPUS_SERVER_URL }}
+          packages: "artifacts/myapp-${{ github.sha }}.tar.gz"
 
              
           
