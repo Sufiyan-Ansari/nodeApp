@@ -52,7 +52,7 @@ jobs:
         run: cd ${{ github.workspace }}
 
       - name: Run a one-line script
-        run: pwd
+        run: docker build -t nodeapp:test .
 
 
              
