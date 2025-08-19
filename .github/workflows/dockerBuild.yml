@@ -51,9 +51,8 @@ jobs:
       - name: Enter in workspace directory
         run: cd ${{ github.workspace }}
 
-      - name: Run a one-line script
-        run: docker build -t nodeapp:test .
-
+      - name: Zipping content
+        run: zip -r Package.zip nodeApp
 
              
           
