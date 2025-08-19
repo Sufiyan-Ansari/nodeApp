@@ -19,22 +19,6 @@ app.get('/', (req, res) => {
     res.render('index');
 });
 
-// app.post('/save', async (req, res) => {
-//     const username = req.body.username;
-//     console.log(req.body.username);
-
-//     if (username) {
-//         try {
-//             await client.set('username', username);
-//             res.render('success', { username });
-//         } catch (err) {
-//             console.error(err);
-//             res.send('Error saving to Redis');
-//         }
-//     } else {
-//         res.send('Username is required');
-//     }
-// });
 
 app.post('/save', async (req, res) => {
     const username = req.body.username;
