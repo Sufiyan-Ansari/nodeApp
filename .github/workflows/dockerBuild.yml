@@ -49,7 +49,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Packaging content
-        run: tar -czvf file.tar.gz ${{ github.workspace }}
+        run: zip -r Package.0.0.1.zip ${{ github.workspace }}
         
 
       - name: Push package to Octopus
