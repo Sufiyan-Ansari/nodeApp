@@ -56,7 +56,8 @@ jobs:
         with:
           api_key: ${{ secrets.OCTOPUS_API_KEY }}
           server: ${{ secrets.OCTOPUS_SERVER_URL }}
-          packages: "artifacts/myapp-${{ github.sha }}.tar.gz"
+          packages: "${{ github.workspace }}/Package.zip"
+
 
              
           
